@@ -15,6 +15,17 @@ public class EnemyMissile : MonoBehaviour
         targetPosition = new Vector3(Random.Range(-10f, 10f), 0, Random.Range(-10f, 10f));
     }
 
+    public Vector3 pos
+    {                                                       // a
+        get
+        {
+            return this.transform.position;
+        }
+        set
+        {
+            this.transform.position = value;
+        }
+    }
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);

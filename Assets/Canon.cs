@@ -14,22 +14,13 @@ public class Canon : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        collar = transform.Find("Collar").gameObject;
-        collarRend = collar.GetComponent<Renderer>();
-
-
-        // Dynamically create an anchor for all Projectiles
-        if (PROJECTILE_ANCHOR == null)
         {
-            GameObject go = new GameObject("_ProjectileAnchor");
-            PROJECTILE_ANCHOR = go.transform;
-        }
-
-        // Find the fireDelegate of the root GameObject
-        GameObject rootGO = transform.root.gameObject;
-        if (rootGO.GetComponent<Canon>() != null)
-        {
-            rootGO.GetComponent<Canon>().fireDelegate += Fire;
+            // Set up PROJECTILE_ANCHOR if it has not already been done
+            if (PROJECTILE_ANCHOR == null)
+            {                                       // b
+                GameObject go = new GameObject("_ProjectileAnchor");
+                PROJECTILE_ANCHOR = go.transform;
+            }                                                
         }
     }
 

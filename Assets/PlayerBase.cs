@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
-    // Start is called before the first frame update
+    static public Transform PROJECTILE_ANCHOR;
+    public float nextShotTime; 
+
+    private GameObject weaponModel;
+    private Transform shotPointTrans;
+
     void Start()
     {
-        
+  
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         
