@@ -36,7 +36,6 @@ public class EnemyMissile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public virtual void Move();
        
 }
 
