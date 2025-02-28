@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class MissileCommand : MonoBehaviour
 {
+    static private MissileCommand S;
     public GameObject enemyMissilePrefab;
-    public GameObject playermissilePrefab;
-    public Transform playerBase;
-  
+    public float      enemySpawnPerSecond = 3f;
+    public float      enemyInsetDefault = 1.5f;
 
+    void Awake() 
+    {
+        S = this;
+        Invoke(nameof(SpawnEnemyMissile), 3f/enemySpawnPerSecond);
+    }
+
+    public void SpawnEnemyMissile()
+    {
+        int ndx = Random.Range(0, enemyMissilePrefab.Length);
+        GameObject go = Instantiate<GameObject>(enemyMissilePrefab[ ndx ]);
+
+        float enemyInset = enemyInsetDefault;
+
+    }
     void Start()
     {
         InvokeRepeating("SpawnEnemyMissile", 1f, 2f);

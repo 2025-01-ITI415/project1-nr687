@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyMissile : MonoBehaviour
 {
+    
     public float speed = 5f;
     private Vector3 targetPosition;
 
@@ -35,7 +36,7 @@ public class EnemyMissile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    public virtual void Move();
        
 }
 
