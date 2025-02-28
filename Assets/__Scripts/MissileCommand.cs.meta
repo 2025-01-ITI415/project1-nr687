@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 54bb1ca03d7ee8e4d92beb24028dd75b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemyMissilePrefab: {fileID: 1636739658290097976, guid: 20db341823284774ab4534e655381e7f, type: 3}
+  - playermissilePrefab: {fileID: 1636739658290097976, guid: 238bcdaa5cf78294a9b49a2c40bdbdf8, type: 3}
+  - playerBase: {fileID: 4316378451152297629, guid: 2fba7cc3b4b6e3c43b226afb6700c7e2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
