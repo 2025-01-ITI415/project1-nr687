@@ -5,15 +5,21 @@ using UnityEngine;
 
 public class EnemyMissile : MonoBehaviour
 {
+    [SerializeField] private GameObject enemyMissilePrefab;
+    [SerializeField] private float Ypadding = 0.5f;
     
-    public float speed = 5f;
-    private Vector3 targetPosition;
-
+    private float minX, maxX;
 
     
     void Start()
     {
-        targetPosition = new Vector3(Random.Range(-10f, 10f), 0, Random.Range(-10f, 10f));
+        minX = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0));
+        maxX = Camera.main.ViewportToWorldPoint(new Vector3(1, 1, 0));
+
+        float randomX = Random.Range(minX, maxX);
+        float yValue == Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0)).y;
+
+        Instantiate(enemyMissilePrefab, new Vector3(randomX, yValue + Ypadding, 0), Quaternion.identity)
     }
 
     public Vector3 pos
@@ -27,15 +33,28 @@ public class EnemyMissile : MonoBehaviour
             this.transform.position = value;
         }
     }
+
+
+
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        Move();
 
-        if (transform.position == targetPosition)
-        {
-            Destroy(gameObject);
-        }
-    }
+    }    
+        
+    public virtual void Move()
+    {
+        Vector3 tempPos = pos;
+        tempPos.y -= speed * Time.deltaTime;
+        pos = tempPos;
+    }    
+        // transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
+        //if (transform.position == targetPosition)
+        
+          //  Destroy(gameObject);
+       
+    
        
 }
 

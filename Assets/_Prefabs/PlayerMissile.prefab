@@ -3,8 +3,8 @@
 --- !u!1 &1636739658290097976
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 160206628001054947, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4959149364935644453}
   - component: {fileID: 6034225406547774132}
   - component: {fileID: 932090345925259646}
-  - component: {fileID: 5803943462671348608}
+  - component: {fileID: -6354099455150298373}
   m_Layer: 0
   m_Name: PlayerMissile
   m_TagString: Untagged
@@ -24,8 +24,8 @@ GameObject:
 --- !u!4 &900374703981478284
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636739658290097976}
   serializedVersion: 2
@@ -39,16 +39,16 @@ Transform:
 --- !u!33 &8932505361439967013
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8032547432109746430, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636739658290097976}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &4959149364935644453
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5790930977883798270, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636739658290097976}
   m_Enabled: 1
@@ -89,8 +89,8 @@ MeshRenderer:
 --- !u!136 &6034225406547774132
 CapsuleCollider:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5130186088982029679, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636739658290097976}
   m_Material: {fileID: 0}
@@ -112,8 +112,8 @@ CapsuleCollider:
 --- !u!54 &932090345925259646
 Rigidbody:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1756551341132766885, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636739658290097976}
   serializedVersion: 4
@@ -136,74 +136,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5803943462671348608
+--- !u!114 &-6354099455150298373
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4901124535970929755, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-  m_PrefabInstance: {fileID: 6072272569554407778}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636739658290097976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c226883b2f2410d47ace7434c659400a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3658fce9a8fbd8b41b2e15b54b67aac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  explosionPrefab: {fileID: 0}
---- !u!1001 &6072272569554407778
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 160206628001054947, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_Name
-      value: PlayerMissile
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.4823
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5834
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.4514
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797273928781409879, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4e12f88c50141a740bde3b4b6b3791f7, type: 3}
+  speed: 5
