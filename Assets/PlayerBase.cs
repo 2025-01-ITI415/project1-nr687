@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour
 {
+    [Header (" Inscribed" )]
     static public Transform PROJECTILE_ANCHOR;
     public float nextShotTime; 
+    public GameObject playerMissile;
+    
 
     private GameObject weaponModel;
     private Transform shotPointTrans;
