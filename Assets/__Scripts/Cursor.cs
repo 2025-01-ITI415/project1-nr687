@@ -6,10 +6,7 @@ public class Cursor : MonoBehaviour
 {
     [SerializeField] GameObject playerMissilePrefab;
     [SerializeField] GameObject canonPrefab;
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()

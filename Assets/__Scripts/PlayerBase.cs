@@ -7,11 +7,11 @@ public class PlayerBase : MonoBehaviour
     [Header (" Inscribed" )]
     static public Transform PROJECTILE_ANCHOR;
     public float nextShotTime; 
-    public GameObject playerMissile;
-    
-
-    private GameObject weaponModel;
+    private GameObject Canon;
     private Transform shotPointTrans;
+
+   
+
 
     void Start()
     {
