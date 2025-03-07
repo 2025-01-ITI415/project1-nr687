@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -428,6 +429,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMissilePrefab: {fileID: 1636739658290097976, guid: 238bcdaa5cf78294a9b49a2c40bdbdf8, type: 3}
   canonPrefab: {fileID: 3381795121731560846, guid: 3055d4d8c829b0b46b4b818eb849dd42, type: 3}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bb1ca03d7ee8e4d92beb24028dd75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMissilePrefab: {fileID: 1636739658290097976, guid: 20db341823284774ab4534e655381e7f, type: 3}
+  enemySpawnPerSecond: 3
+  enemyInsetDefault: 1.5
 --- !u!4 &1241792292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6876291520614398725, guid: 3055d4d8c829b0b46b4b818eb849dd42, type: 3}

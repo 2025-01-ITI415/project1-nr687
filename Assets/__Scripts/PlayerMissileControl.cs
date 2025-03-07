@@ -15,5 +15,10 @@ public class PlayerMissileControl : MonoBehaviour
     void Update()
     {
        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
+        if (transform.position == target)
+        {
+             Destroy(gameObject);
+        }  
     }
-}
+}   
